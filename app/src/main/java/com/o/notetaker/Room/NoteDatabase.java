@@ -1,4 +1,4 @@
-package com.o.notetaker;
+package com.o.notetaker.Room;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -8,6 +8,8 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
+
+import com.o.notetaker.Model.Note;
 
 @Database(entities = Note.class, version = 1)
 public abstract class NoteDatabase extends RoomDatabase {

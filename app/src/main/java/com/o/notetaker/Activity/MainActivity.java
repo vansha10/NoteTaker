@@ -1,4 +1,4 @@
-package com.o.notetaker;
+package com.o.notetaker.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +17,10 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.o.notetaker.Adapter.NoteAdapter;
+import com.o.notetaker.Model.Note;
+import com.o.notetaker.R;
+import com.o.notetaker.ViewModel.NoteViewModel;
 
 import java.util.List;
 

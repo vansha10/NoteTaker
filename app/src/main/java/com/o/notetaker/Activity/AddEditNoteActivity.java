@@ -1,4 +1,4 @@
-package com.o.notetaker;
+package com.o.notetaker.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +12,10 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.Toast;
+
+import com.o.notetaker.Model.Note;
+import com.o.notetaker.R;
+import com.o.notetaker.ViewModel.AddEditNoteViewModel;
 
 public class AddEditNoteActivity extends AppCompatActivity {
 

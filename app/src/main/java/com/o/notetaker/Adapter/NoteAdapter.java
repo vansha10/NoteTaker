@@ -1,4 +1,4 @@
-package com.o.notetaker;
+package com.o.notetaker.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.o.notetaker.Model.Note;
+import com.o.notetaker.R;
 
 public class NoteAdapter extends ListAdapter<Note, NoteAdapter.ViewHolder> {
 

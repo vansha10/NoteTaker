@@ -1,10 +1,13 @@
-package com.o.notetaker;
+package com.o.notetaker.Repository;
 
 import android.app.Application;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import androidx.lifecycle.LiveData;
+
+import com.o.notetaker.Model.Note;
+import com.o.notetaker.Room.NoteDao;
+import com.o.notetaker.Room.NoteDatabase;
 
 import java.util.List;
 

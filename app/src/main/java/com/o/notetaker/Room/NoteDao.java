@@ -1,4 +1,4 @@
-package com.o.notetaker;
+package com.o.notetaker.Room;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -6,6 +6,8 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.o.notetaker.Model.Note;
 
 import java.util.List;
 

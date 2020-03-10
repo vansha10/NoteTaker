@@ -1,4 +1,4 @@
-package com.o.notetaker;
+package com.o.notetaker.Model;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
