@@ -17,7 +17,7 @@ public class NoteAdapter extends ListAdapter<Note, NoteAdapter.ViewHolder> {
 
     private OnItemClickListener listener;
 
-    protected NoteAdapter() {
+    public NoteAdapter() {
         super(DIFF_CALLBACK);
     }
 
