@@ -13,6 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.o.notetaker.Model.Note;
 import com.o.notetaker.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class NoteAdapter extends ListAdapter<Note, NoteAdapter.ViewHolder> {
 
     private OnItemClickListener listener;
@@ -56,16 +59,13 @@ public class NoteAdapter extends ListAdapter<Note, NoteAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView textViewTitle;
-        private TextView textViewDescription;
-        private TextView textViewPriority;
+        @BindView(R.id.text_view_title) TextView textViewTitle;
+        @BindView(R.id.text_view_description) TextView textViewDescription;
+        @BindView(R.id.text_view_priority) TextView textViewPriority;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            textViewTitle = itemView.findViewById(R.id.text_view_title);
-            textViewDescription = itemView.findViewById(R.id.text_view_description);
-            textViewPriority = itemView.findViewById(R.id.text_view_priority);
-
+            ButterKnife.bind(this, itemView);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

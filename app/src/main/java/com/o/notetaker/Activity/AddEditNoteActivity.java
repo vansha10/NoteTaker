@@ -17,6 +17,9 @@ import com.o.notetaker.Model.Note;
 import com.o.notetaker.R;
 import com.o.notetaker.ViewModel.AddEditNoteViewModel;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class AddEditNoteActivity extends AppCompatActivity {
 
     public static final String EXTRA_ID = "EXTRA_ID";
@@ -25,9 +28,14 @@ public class AddEditNoteActivity extends AppCompatActivity {
     public static final String EXTRA_PRIORITY = "EXTRA_PRIORITY";
     public static final String EXTRA_REQUEST = "EXTRA_REQUEST";
 
-    private EditText editTextTitle;
-    private EditText editTextDescription;
-    private NumberPicker numberPickerPriority;
+    @BindView(R.id.edit_text_title)
+    EditText editTextTitle;
+
+    @BindView(R.id.edit_text_description)
+    EditText editTextDescription;
+
+    @BindView(R.id.number_picker_priority)
+    NumberPicker numberPickerPriority;
 
     private AddEditNoteViewModel viewModel;
 
@@ -39,9 +47,7 @@ public class AddEditNoteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
 
-        editTextTitle = findViewById(R.id.edit_text_title);
-        editTextDescription = findViewById(R.id.edit_text_description);
-        numberPickerPriority = findViewById(R.id.number_picker_priority);
+        ButterKnife.bind(this);
 
         numberPickerPriority.setMinValue(1);
         numberPickerPriority.setMaxValue(10);
